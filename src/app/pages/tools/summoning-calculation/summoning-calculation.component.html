@@ -1,0 +1,142 @@
+<nz-row>
+
+  <nz-col nzSpan="4">
+
+    <nz-form-item>
+      <nz-form-label nzSpan="4" nzRequired>材料1</nz-form-label>
+      <nz-form-control nzSpan="20">
+        <nz-input-group>
+          <input type="number" nz-input placeholder="请输入材料1的数量" [ngModel]="in1$|async"
+                 (input)="changeBaseInput($event,'in1')"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="4" nzRequired>材料2</nz-form-label>
+      <nz-form-control nzSpan="20">
+        <nz-input-group>
+          <input type="number" nz-input placeholder="请输入材料2的数量" [ngModel]="in2$|async"
+                 (input)="changeBaseInput($event,'in2')"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="4" nzRequired>材料3</nz-form-label>
+      <nz-form-control nzSpan="20">
+        <nz-input-group>
+          <input type="number" nz-input placeholder="请输入材料3的数量" [ngModel]="in3$|async"
+                 (input)="changeBaseInput($event,'in3')"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="4" nzRequired>材料4</nz-form-label>
+      <nz-form-control nzSpan="20">
+        <nz-input-group>
+          <input type="number" nz-input placeholder="请输入材料4的数量" [ngModel]="in4$|async"
+                 (input)="changeBaseInput($event,'in4')"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="4" nzRequired>材料5</nz-form-label>
+      <nz-form-control nzSpan="20">
+        <nz-input-group>
+          <input type="number" nz-input placeholder="请输入材料5的数量" [ngModel]="in5$|async"
+                 (input)="changeBaseInput($event,'in5')"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+
+  </nz-col>
+
+
+  <nz-col nzSpan="4" nzOffset="1">
+    <form nz-form [formGroup]="validateForm" class="login-form">
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+            <input type="number" nz-input formControlName="in1" placeholder="请输入材料1的数量"
+                   (input)="changeInput($event,'in1')"/>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+            <input type="number" nz-input formControlName="in2" placeholder="请输入材料2的数量"
+                   (input)="changeInput($event,'in2')"/>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+            <input type="number" nz-input formControlName="in3" placeholder="请输入材料3的数量"
+                   (input)="changeInput($event,'in3')"/>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+            <input type="number" nz-input formControlName="in4" placeholder="请输入材料4的数量"
+                   (input)="changeInput($event,'in4')"/>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group>
+            <input type="number" nz-input formControlName="in5" placeholder="请输入材料5的数量"
+                   (input)="changeInput($event,'in5')"/>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+
+  </nz-col>
+
+  <nz-col nzSpan="1" nzOffset="1">
+
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>{{ou1}}</nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>{{ou2}}</nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>{{ou3}}</nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>{{ou4}}</nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group>{{ou5}}</nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+  </nz-col>
+
+
+</nz-row>
+
